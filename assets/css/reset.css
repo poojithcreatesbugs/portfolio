@@ -1,0 +1,236 @@
+/* ==========================================================
+   POOJITH PORTFOLIO V2
+   File: reset.css
+   Global Reset & Base Styles
+========================================================== */
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================================================
+   ROOT
+========================================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+    font-size:16px;
+
+    -webkit-text-size-adjust:100%;
+
+}
+
+/* ==========================================================
+   BODY
+========================================================== */
+
+body{
+
+    background:var(--color-background);
+
+    color:var(--color-text);
+
+    font-family:var(--font-body);
+
+    font-size:var(--fs-body);
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+    min-height:100vh;
+
+    text-rendering:optimizeLegibility;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+}
+
+/* ==========================================================
+   IMAGES
+========================================================== */
+
+img,
+picture{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* ==========================================================
+   LISTS
+========================================================== */
+
+ul,
+ol{
+
+    list-style:none;
+
+}
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+button{
+
+    background:none;
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    font:inherit;
+
+    color:inherit;
+
+}
+
+/* ==========================================================
+   INPUTS
+========================================================== */
+
+input,
+textarea,
+select{
+
+    font:inherit;
+
+    color:inherit;
+
+    background:none;
+
+    border:none;
+
+    outline:none;
+
+}
+
+/* ==========================================================
+   TABLES
+========================================================== */
+
+table{
+
+    border-collapse:collapse;
+
+    border-spacing:0;
+
+}
+
+/* ==========================================================
+   SECTIONS
+========================================================== */
+
+section{
+
+    position:relative;
+
+}
+
+/* ==========================================================
+   SVG
+========================================================== */
+
+svg{
+
+    display:block;
+
+}
+
+/* ==========================================================
+   SELECTION
+========================================================== */
+
+::selection{
+
+    background:var(--color-accent);
+
+    color:#000;
+
+}
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:var(--color-background);
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2b2b2b;
+
+    border-radius:999px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--color-accent);
+
+}
+
+/* ==========================================================
+   FOCUS STATES
+========================================================== */
+
+:focus-visible{
+
+    outline:2px solid var(--color-accent);
+
+    outline-offset:4px;
+
+}
+
+/* ==========================================================
+   MEDIA
+========================================================== */
+
+video,
+canvas{
+
+    display:block;
+
+    max-width:100%;
+
+}
